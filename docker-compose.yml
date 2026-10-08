@@ -27,6 +27,9 @@ services:
       POSTGRES_PORT: "5432"
       DJANGO_SECRET_KEY: dev-secret-change-me
       DEBUG: "true"
+      AIRTABLE_API_KEY: ${AIRTABLE_API_KEY}
+      AIRTABLE_BASE_ID: ${AIRTABLE_BASE_ID}
+      AIRTABLE_TABLE_NAME: ${AIRTABLE_TABLE_NAME:-Tasks}
 
   frontend:
     build: ./frontend

@@ -59,3 +59,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 USE_TZ = True
+
+AIRTABLE_API_KEY = os.environ.get('AIRTABLE_API_KEY', '')
+AIRTABLE_BASE_ID = os.environ.get('AIRTABLE_BASE_ID', '')
+AIRTABLE_TABLE_NAME = os.environ.get('AIRTABLE_TABLE_NAME', 'Tasks')
